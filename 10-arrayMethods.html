@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>   
+
+        // Array Literal
+        const langs = ["C", "C++", "Java", "Python", "JavaScript"];
+        langs[1] = 100;
+        console.log(langs.length);
+        // 1. .push();
+        // 2. .pop();
+        // 3. .shift();
+        // 4. .unshift();
+        console.log(langs.unshift("PHP"));
+        console.log(langs);
+
+        // New keyword
+        const cars = new Array("BMW", "Benz", "Audi", "Toyota", "Honda");
+        console.log(cars);
+
+        const concatArray = langs.concat(cars);
+        console.log(concatArray);
+    </script>
+
+</body>
+</html>

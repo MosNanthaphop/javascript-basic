@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // for loop
+        let fruits = ["apple", "banana", "cherry", "date"];
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+
+        for (let i = 1; i <= 4; i++) {
+            // console.log("Number " + i);
+            console.log(`Number ${i}`);
+        }
+
+        // for in loop
+        let person = {
+            name: "Mslick",
+            age: 30,
+            city: "New York"
+        }
+        for (let key in person) {
+            console.log(key + ": " + person[key]);
+        }
+
+        // for of loop
+        let colors = ["red", "green", "blue"];
+        for (let color of colors) {
+            console.log(color);
+        }
+
+        // while loop
+        let i = 0;
+        while (i <= 5) {
+            console.log(i);
+            i++;
+        }
+
+        // do while loop
+        let j = 0;
+        do {
+            console.log(`count: ${j}`);
+            j++;
+        } while (j > 1);
+    </script>
+
+</body>
+</html>

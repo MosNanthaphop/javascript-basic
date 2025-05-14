@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    
+    <button onclick="alert('Hello JS');">Click me</button>
+
+    <p id="myText">Change this text</p>
+    <button id="myBtn">Click to change text</button>
+    <button id="changeColorBtn">Color</button>
+
+    <script>
+        const button = document.getElementById("myBtn");
+        const changeColorBtn = document.getElementById("changeColorBtn");
+        const body = document.getElementById("body");
+
+        button.addEventListener("click", () => {
+            const myText = document.getElementById("myText");
+            myText.textContent = "Detected JS change";
+        })
+
+        changeColorBtn.addEventListener("mouseover", () => { 
+            // const body = document.getElementById("body");
+            body.style.backgroundColor = "red";
+        })
+
+        changeColorBtn.addEventListener("mouseout", function(){
+            // const body = document.getElementById("body");
+            body.style.backgroundColor = "white";
+        })
+    </script>
+
+</body>
+</html>

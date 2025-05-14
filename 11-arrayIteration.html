@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // forEach()
+        const numbers = [1, 2, 3, 4, 5];
+        numbers.forEach((num) => {
+            console.log(num);
+        })
+
+        // map()
+        const numbers2 = [1, 2, 3, 4, 5];
+        const doubled = numbers2.map((num) => {
+            return num * 2;
+        })
+        console.log(doubled);
+
+        // filter()
+        const numbers3 = [1, 2, 3, 4, 5];
+        const even = numbers3.filter((num) => {
+            return num % 2 == 0;
+        })
+        console.log(even);
+
+        // reduce()
+        const numbers4 = [1, 2, 3, 4, 5];
+        const sum = numbers4.reduce((total, number) => {
+            console.log(total, number);
+            return total + number;
+        }, 0)
+        console.log(sum);
+
+        // some()
+        const numbers5 = [1, 2, 3, 4, 5];
+        const hasEven = numbers5.some((num) => {
+            return num % 2 == 0;
+        })
+        console.log(hasEven);
+
+        // every()
+        const numbers6 = [1, 2, 3, 4, 5];
+        const allPositive = numbers6.every((num) => {
+            return num > 0;
+        })
+        console.log(allPositive);
+
+        // find()
+        const numbers7 = [1, 2, 3, 4, 5];
+        const firstEven = numbers7.find((num) => {
+            return num % 2 == 0;
+        })
+        console.log(firstEven);
+
+        // findIndex()
+        const numbers8 = [1, 2, 3, 4, 5];
+        const firstEvenIndex = numbers8.findIndex((num) => {
+            return num % 2 == 0;
+        })
+        console.log(firstEvenIndex);
+    </script>
+
+</body>
+</html>

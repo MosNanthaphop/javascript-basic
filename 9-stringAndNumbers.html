@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let text = "This is a string";
+        let firstName = "Mos";
+        let lastName = "Weerahong";
+        // let greet = firstName + " " + lastName;
+        let greet = `My name is : "${firstName} ${lastName}"`; // Template String
+        let price = 100;
+        let VAT = 0.07;
+        let totalPrice = `Total: ${(price * (1 + VAT)).toFixed(2)}`; // Template String with expression
+        
+        console.log(totalPrice);
+        console.log(greet);
+        console.log(greet.length);
+
+        let number1 = 200;
+        let number2 = 100;
+        let x = 10 - "JS";
+        let sum = number1 + number2;
+        console.log(x);
+
+    </script>
+
+</body>
+</html>

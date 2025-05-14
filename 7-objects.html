@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // Object Literal
+        const car = {
+            make: "BMW",
+            model: "A-Class",
+            year: 2020,
+            // Method
+            displayInfo() {
+                console.log(`${this.make} ${this.model}, Year: ${this.year}`);
+            }
+        };
+
+        console.log(car.make);
+        console.log(car.model);
+        car.displayInfo();
+
+        const date = new Date();
+        console.log(date);
+
+        // Object Constructor
+        function Car(make, model, year) {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+            this.displayInfo = function() {
+                console.log(`${this.make} ${this.model}, Year: ${this.year}`);
+            }
+        }
+
+        // New Keyword
+        const car1 = new Car("Benz", "C-Class", 2021);
+        const car2 = new Car("Audi", "A4", 2022);
+
+        console.log(car1.make);
+        console.log(car2.make);
+
+        car1.displayInfo();
+        car2.displayInfo();
+
+    </script>
+
+</body>
+</html>

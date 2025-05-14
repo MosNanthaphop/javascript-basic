@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // Object Destructuring
+        const person = {
+            firstname: "Mos",
+            lastname: "Weerahong",
+            age: 21
+        };
+        let {firstname: fn, lastname: ln, age, country = "Thailand"} = person;
+        console.log(fn, ln, age, country);
+
+        // Array Destructuring
+        const fruits = ["apple", "banana", "cherry"];
+        let [fruit1, , fruit3] = fruits;
+        console.log(fruit1, fruit3);
+
+        // Rest Operator
+        const numbers = [10, 20, 30, 40, 50];
+        const [num1, num2, ...rest] = numbers;
+        console.log(num1, num2, rest);
+
+        let firstName = "Mos";
+        let lastName = "Weerahong";
+
+        // Swapping variables using destructuring
+        [firstName, lastName] = [lastName, firstName];
+        console.log(firstName, lastName);
+
+    </script>
+
+</body>
+</html>
